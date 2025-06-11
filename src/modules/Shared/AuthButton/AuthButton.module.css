@@ -1,0 +1,36 @@
+
+
+.authButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 27px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #F5F5F5;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid #F5F5F5;
+    
+    &:hover {
+        background-color: var(--color-primary-hover);
+        border: 2px solid #F5F5F5;
+        color: #F5F5F5;
+    }
+    
+    &:active {
+        background-color: var(--color-primary-hover);
+        border: 2px solid #F5F5F5;
+        color: #F5F5F5;
+    }
+}
+
+.authButton i {
+    font-size: 20px;
+    margin-top: 5px;
+}
