@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+}
+
+.authLayoutContent input,
+.authLayoutContent textarea {
+  background-color: transparent !important;
+  color: #fff !important;
+  border: 3px solid #fff !important;
+  border-radius: 10px !important;
+  padding: 10px !important;
+  outline: none !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 16px !important;
+  width: 100% !important;
+  height: 100% !important;
+  resize: none !important;
+  box-shadow: none !important;
+}
+
+.authLayoutContent input::placeholder,
+.authLayoutContent textarea::placeholder {
+  color: #fff !important;
+}
+
+a {
+  text-decoration: none;
+}

@@ -18,11 +18,11 @@ function App() {
     errorElement: <NotFound />,
     children: [
       { index: true, element: <Login /> },
-      { path: "login", element: <Login /> },
-      { path: "register", element: <Register /> },
-      { path: "forget-password", element: <ForgetPassword /> },
-      { path: "reset-password", element: <ResetPassword /> },
-      { path: "change-password", element: <ChangePassword /> },
+      { path: "/login", element: <Login /> },
+      { path: "/register", element: <Register /> },
+      { path: "/forget-password", element: <ForgetPassword /> },
+      { path: "/reset-password", element: <ResetPassword /> },
+      { path: "/change-password", element: <ChangePassword /> },
     ]
   },
   {
