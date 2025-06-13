@@ -33,7 +33,7 @@ function Login() {
           <AuthButton title="Sign In" />
           <div className="d-flex align-items-center gap-1">
             <p className="p-0 m-0">Forgot Password?</p>
-            <Link to={'forget-password'} className={styles.forgotPasswordLink}>
+            <Link to={'/forget-password'} className={styles.forgotPasswordLink}>
               click here
             </Link>
           </div>

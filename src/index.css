@@ -4,7 +4,8 @@
   box-sizing: border-box !important;
 }
 
-.authLayoutContent input,
+.authLayoutContent input, 
+.authLayoutContent select,
 .authLayoutContent textarea {
   background-color: transparent !important;
   color: #fff !important;
@@ -18,6 +19,10 @@
   height: 100% !important;
   resize: none !important;
   box-shadow: none !important;
+}
+
+.authLayoutContent select option {
+  color: #000;
 }
 
 .authLayoutContent input::placeholder,
