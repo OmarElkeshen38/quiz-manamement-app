@@ -2,8 +2,24 @@ import { Link } from "react-router-dom";
 import AuthTitle from "../../Shared/AuthTitle/AuthTitle";
 import styles from './Login.module.css';
 import AuthButton from "../../Shared/AuthButton/AuthButton";
+import { useDispatch, useSelector } from "react-redux";
+import { loginFailure, loginStart, loginSuccess } from "../authSlice";
 
 function Login() {
+  const dispatch = useDispatch();
+  const { user, loading, error } = useSelector(state => state.auth);
+
+  const handleLogin = async () => {
+    dispatch(loginStart());
+    try {
+      // Simulate API
+      const userData = { id: 1, name: "Omar" };
+      dispatch(loginSuccess(userData));
+    } catch (err) {
+      dispatch(loginFailure("Failed to login"));
+    }
+  };
+
   return (
     <>
       <AuthTitle title="Continue your learning journey with QuizWiz!" />
@@ -19,7 +35,7 @@ function Login() {
         </Link>
       </div>
 
-      <form action="" className="px-4 py-2">
+      <form onSubmit={handleLogin} className="px-4 py-2">
         <div className="mb-3">
           <label htmlFor="email" className="form-label">Registered email address</label>
           <input type="email" placeholder="Type your email" className="form-control" id="email" aria-describedby="emailHelp" />
